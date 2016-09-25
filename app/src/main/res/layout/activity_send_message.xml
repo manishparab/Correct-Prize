@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    tools:context="com.ksm.cp.Activity.SendMessage">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="10sp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/SendMessage_ToUserImage"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:id="@+id/SendMessage_ToOwnerName"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/SendMessage_MessageContent"
+                    android:layout_width="fill_parent"
+                    android:textSize="@dimen/text_size"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="15"
+                    android:textColor="@color/lightBlack"
+                    android:minLines="10"
+                    android:gravity="left|top"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/back"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:windowSoftInputMode="adjustPan"
+                    android:textCursorDrawable="@drawable/cursorcolor"
+                    />
+                <Button android:id="@+id/Button_activity_SendMessage" style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Send Message"
+                    android:layout_marginTop="20sp"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:fontFamily="sans-serif"
+                    android:background="#ff7e51c2" />
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

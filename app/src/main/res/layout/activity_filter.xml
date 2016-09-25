@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewFilterDistance"
+            android:textSize="@dimen/text_size_small"
+            android:text="Distance"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/TextViewSelectedDistance"
+            android:text="5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="miles"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:layout_width="match_parent"
+            android:id="@+id/SeekBarFilterDistance"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewSelectedDistance"
+            app:dsb_progressColor="@color/themecolor"
+            app:dsb_min="1"
+            app:dsb_max="5"
+            app:dsb_indicatorPopupEnabled = "false"
+            app:dsb_trackHeight="5dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_Divider"/>
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:id="@+id/RelativeLayoutLocation">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Location"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginLeft="@dimen/margin_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/TextViewUserLocation"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginRight="60dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/ic_arrow_forward_gray_18dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/EditTextDisplayName"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/text_size_small"
+        android:textCursorDrawable="@drawable/cursorcolor"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/ButtonEditDisplayName" style="?android:textAppearanceSmall"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Update Display Name"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif"
+        android:background="#ff7e51c2" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="230dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_search_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/searchSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="180dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_build_white_18dp" />
+
+    <ImageButton
+        android:id="@+id/addPosting"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add_a_photo_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/buySellProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_monetization_on_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/userprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_account_circle_white_24dp" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/search_src_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+</RelativeLayout>

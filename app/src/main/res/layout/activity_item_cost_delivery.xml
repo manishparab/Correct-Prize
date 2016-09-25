@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:layout_marginRight="20sp"
+            android:textSize="@dimen/text_size_small"
+            android:text="Price"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="100sp"
+            android:id="@+id/EditTextPrice"
+            android:inputType="number|none"
+            android:gravity="left|center"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/back"
+            android:paddingLeft="@dimen/padding_left"
+            android:layout_marginLeft="38sp"
+            android:layout_height="@dimen/text_height_small"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="Negotiable"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            />
+
+        <RadioGroup
+            android:checkedButton="@+id/RadioNoPrice"
+            android:id="@+id/togglePrice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/outline_radio_btn_grp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioYesPrice"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Yes"
+                />
+
+            <RadioButton
+                android:id="@+id/RadioNoPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="No"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="@dimen/text_size_small"
+            android:text="Deliver/Ship"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            />
+
+        <RadioGroup
+            android:checkedButton="@+id/RadioNo"
+            android:id="@+id/toggleDeliveryOption"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/outline_radio_btn_grp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioYes"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Yes"
+                />
+
+            <RadioButton
+                android:id="@+id/RadioNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="No"
+
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="5sp"
+            android:textSize="@dimen/text_size_small"
+            android:text="Sold from"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/EditTextZipCode"
+            android:gravity="left|center"
+            android:hint="Current location"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/back"
+            android:layout_marginRight="10sp"
+            android:inputType="number"
+            android:paddingRight="@dimen/padding_left"
+            android:paddingLeft="@dimen/padding_left"
+            android:layout_height="@dimen/text_height_small"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:id="@+id/ImageViewRefreshLocation"
+            android:src="@drawable/ic_refresh_black_24dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewItemConditionlable"
+            android:textSize="@dimen/text_size_small"
+            android:text="Condition"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:id="@+id/TextViewItemCondition"
+            android:text="Used"
+            android:layout_alignParentRight="true"
+            />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:layout_width="match_parent"
+            android:id="@+id/SeekBarItemCondition"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewItemCondition"
+            app:dsb_progressColor="@color/themecolor"
+            app:dsb_min="1"
+            app:dsb_max="4"
+            app:dsb_indicatorPopupEnabled = "false"
+            app:dsb_trackHeight="5dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_marginBottom="30sp"
+        android:orientation="vertical">
+        <Button android:id="@+id/Button_activity_cost_delivery_next" style="?android:textAppearanceSmall"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Post Offer"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif"
+            android:background="#ff7e51c2" />
+    </LinearLayout>
+
+</LinearLayout>

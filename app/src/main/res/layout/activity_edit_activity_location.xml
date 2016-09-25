@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.ksm.cp.Activity.EditActivityLocation">
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size_small"
+    android:hint="ZipCode"
+    android:inputType="number"
+    android:paddingLeft="@dimen/margin_left"
+    android:id="@+id/EditTextZipCode"
+    android:textCursorDrawable="@drawable/cursorcolor"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_very_small"
+        android:text="This zip code will be used for posting your offers and finding other offers near you"
+        />
+
+    <Button android:id="@+id/Button_GetCurrentLocation" style="?android:textAppearanceSmall"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Update Current Location"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="#ff7e51c2" />
+
+</LinearLayout>

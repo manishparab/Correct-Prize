@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:scrollbars="horizontal" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:text="Add Photo"
+                android:id="@+id/ButtonAddPhotos"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="10sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_marginTop="5sp"
+                android:id="@+id/EditTextItemName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightBlack"
+                android:background="@drawable/back"
+                android:height="@dimen/text_height"
+                android:textSize="@dimen/text_size"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Description"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="10sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:layout_marginTop="5sp"
+                android:id="@+id/EditTextItemDescription"
+                android:layout_width="fill_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:textColor="@color/lightBlack"
+                android:minLines="6"
+                android:gravity="left|top"
+                android:scrollbars="vertical"
+                android:background="@drawable/back"
+                android:paddingLeft="@dimen/padding_left"
+                android:windowSoftInputMode="adjustPan"
+                android:textCursorDrawable="@drawable/cursorcolor"
+                />
+
+
+            <TextView
+                android:height="@dimen/text_height"
+                android:layout_marginTop="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_forward_black_18dp"
+                android:id="@+id/TextViewCategory"
+                android:text="Choose Category"
+                android:textSize="@dimen/text_size_small"
+                android:background="@drawable/back"
+                android:paddingLeft="@dimen/padding_left"
+                android:gravity="center_vertical"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="30sp"
+                android:orientation="vertical">
+                <Button android:id="@+id/Button_activity_name_description_next" style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="Next"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:fontFamily="sans-serif"
+                    android:background="#ff7e51c2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
